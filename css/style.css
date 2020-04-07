@@ -1,0 +1,178 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(73, 112, 185,.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* ------------ container ------------ */
+.container{
+    padding:10px;
+    width:80%;
+    max-width: 650px;
+    margin:0 auto;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 100%;
+    height:200px;
+    background-color: #4162f6;
+    position: relative;
+}
+.header>h1{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    color: #FFF;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:100%;
+    height: 500px;
+    background-color: #FFF;
+    overflow: auto;
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:100%;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.blueBox:hover{
+    cursor: pointer;
+}
+.item i.emptyBox:hover{
+    cursor: pointer;
+}
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 25px;
+    left:60px;
+    top:7px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+}
+.item i.Trashcan{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.Trashcan:hover{
+    cursor: pointer;
+}
+.blueBox:before {
+    content: url(../img/blue.jpg);
+  }
+ 
+  .emptyBox:before {
+    content: url(../img/none.jpg);
+  }
+  .emptyBox:hover {
+    content: url(../img/grey.jpg);
+  }
+  .Trashcan:before {
+    content: url(../img/trash1.JPG);
+  }
+  .Trashcan:hover {
+    content: url(../img/trash.JPG);
+  }
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 100%;
+    height:50px;
+    padding-top: 10px;
+    background-color: #FFF;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-to-do i{
+    left: 5px;
+    content: url(../img/add.jpg);
+    position: absolute;
+    font-size: 40px;
+    bottom: 5px;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 60px;
+    height: 35px;
+    width: 320px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do input:hover{
+    background-color: rgba(42, 71, 124, 0.2);
+}
+@media screen and (max-width:550px){
+    body{
+        background-color: rgba(14, 43, 97, 0.2);
+    }
+    .container{
+        padding: 0px;
+        width: 100%;
+    }
+    .content{
+        height:fit-content + 50px;
+        overflow-y: scroll;
+    }
+    .add-to-do{
+        float: bottom;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
